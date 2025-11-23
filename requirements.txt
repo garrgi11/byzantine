@@ -1,0 +1,25 @@
+# Spoon OS Core
+spoon-core>=0.1.0
+
+# MCP Protocol
+mcp>=0.1.0
+fastmcp>=0.1.0
+
+# Neo Blockchain
+neo3-py>=3.0.0
+neo3-boa>=0.1.0
+
+# Gemini API
+google-generativeai>=0.3.0
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+aiohttp>=3.9.0
+pydantic>=2.0.0
+
+# Development
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+flake8>=6.0.0

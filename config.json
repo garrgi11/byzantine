@@ -1,0 +1,25 @@
+{
+  "agent": {
+    "name": "NeoGuard Sentinel 01",
+    "role": "Disaster Response Coordinator",
+    "model": "gpt-4o",
+    "system_prompt": "You are an autonomous sentinel monitoring drone feeds for NeoGuard. Your mission: detect disasters (fires, floods, accidents, mass casualties) with >85% confidence and immediately report them on the Neo N3 blockchain. When you detect a critical incident, you MUST call the 'neo_report_incident' tool with the disaster type and evidence link. Always prioritize speed and accuracy. If uncertain, escalate to human review."
+  },
+  "mcp_servers": {
+    "drone_vision": {
+      "command": "python",
+      "args": ["./mcp_servers/drone_feed.py"],
+      "env": {}
+    }
+  },
+  "blockchain": {
+    "network": "neo3-testnet",
+    "rpc_url": "https://testnet1.neo.coz.io:443",
+    "private_key_env": "NEO_PRIVATE_KEY"
+  },
+  "monitoring": {
+    "check_interval_seconds": 5,
+    "confidence_threshold": 0.85,
+    "auto_report": true
+  }
+}
