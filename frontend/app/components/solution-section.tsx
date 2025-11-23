@@ -55,9 +55,9 @@ export function SolutionSection() {
   ]
 
   return (
-    <section ref={sectionRef} className="bg-gradient-to-br from-slate-900 via-orange-950 to-black px-8 py-20">
+    <section ref={sectionRef} className="bg-gradient-to-br from-slate-900 via-orange-950 to-black px-4 sm:px-6 md:px-8 py-16 sm:py-20">
       <div className="mx-auto max-w-6xl">
-        <div className="grid grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           {/* Left: Image */}
           <div className="flex flex-col">
             <p className="text-orange-400 text-sm font-semibold mb-2 uppercase tracking-wider">All-in-one NeoGuard DePIN Technology</p>
@@ -78,7 +78,7 @@ export function SolutionSection() {
 
           {/* Right: Process Steps */}
           <div className="flex flex-col gap-8">
-            <h2 className="text-5xl font-bold text-amber-100 mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-100 mb-6 sm:mb-8">
               An Autonomous <span className="text-orange-400">Sentinel Grid</span>
             </h2>
 

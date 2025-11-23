@@ -29,33 +29,33 @@ export function DronesSection() {
   }, [isVisible])
 
   return (
-    <section className="bg-white py-32 px-8">
+    <section className="bg-white py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-8">
       <div className="mx-auto max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Content */}
           <div ref={contentRef} className="opacity-0">
-            <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 leading-tight">
               We Send Autonomous Drones to 911 Calls
             </h2>
-            <p className="text-lg text-gray-600 mb-12">
+            <p className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-12">
               Paladin is the all-in-one Drone as First Responder (DFR) solution for Public Safety.
             </p>
 
             {/* Stats */}
-            <div className="flex items-center gap-8">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 md:gap-8">
               <div>
-                <div className="text-4xl font-bold text-orange-500">90 sec</div>
-                <p className="text-sm text-gray-600 mt-1">Average response time once a 911 call comes in</p>
+                <div className="text-3xl sm:text-4xl font-bold text-orange-500">90 sec</div>
+                <p className="text-xs sm:text-sm text-gray-600 mt-1">Average response time once a 911 call comes in</p>
               </div>
-              <div className="text-gray-300">/</div>
+              <div className="hidden sm:block text-gray-300">/</div>
               <div>
-                <div className="text-4xl font-bold text-orange-500">670+</div>
-                <p className="text-sm text-gray-600 mt-1">Emergency calls supported per client</p>
+                <div className="text-3xl sm:text-4xl font-bold text-orange-500">670+</div>
+                <p className="text-xs sm:text-sm text-gray-600 mt-1">Emergency calls supported per client</p>
               </div>
-              <div className="text-gray-300">/</div>
+              <div className="hidden sm:block text-gray-300">/</div>
               <div>
-                <div className="text-4xl font-bold text-orange-500">30,000+</div>
-                <p className="text-sm text-gray-600 mt-1">Miles logged by clients</p>
+                <div className="text-3xl sm:text-4xl font-bold text-orange-500">30,000+</div>
+                <p className="text-xs sm:text-sm text-gray-600 mt-1">Miles logged by clients</p>
               </div>
             </div>
           </div>
